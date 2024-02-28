@@ -60,12 +60,12 @@ app = Flask(__name__, template_folder='./templates',static_folder='./static')
 
 @app.route('/')
 def home():
-    return render_template('base.html')
+    return render_template('index.html')
 
 # define a route for karubot.html
 @app.route('/karubot')
 def hom():
-    return render_template('karubot.html')
+    return render_template('base.html')
 
 
 @app.route('/get', methods=['POST'])
