@@ -1,6 +1,6 @@
-#UNIVERSITY CHATBOT
+# UNIVERSITY CHATBOT
 The university chatbot is intended to help university stakeholders get quick responses about the University.
-##Steps to install
+## Steps to install
 Inorder to install the university chatbot, follow the following steps.
 1. Create a conda environment by using conda create -n <your environment name> with python 3.10.x
 2. Install the necessary dependenices from the requirement.txt.
