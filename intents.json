@@ -1,8 +1,8 @@
 {"intents":[
 
     {"tag":"greetings",
-     "patterns":["hello","hey","good day","greetings"],
-     "responses":["hello","hey","what can i do for you"]
+     "patterns":["hello","hey","Hello there","greetings"],
+     "responses":["hello","hey","Hello, what can i do for you"]
      },
      {
         "tag": "noanswer",
@@ -55,8 +55,7 @@
                     "are you currently opened?"],
         "responses":["we are open right now",
                     "we are open from 8.00 am to 9pm",
-                    "we are currently open",
-                    "we are currently closed"]
+                    "we are currently open"]
      
     },
     {

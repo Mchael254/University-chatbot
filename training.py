@@ -8,7 +8,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.optimizers import SGD 
 
-# Initialize the lemmatizer
+#lemmatizer
 lemmatizer = WordNetLemmatizer()
 # Load intents
 intents = json.loads(open('./intents.json').read())
@@ -52,7 +52,7 @@ random.shuffle(training)
 train_x = np.array([np.array(bag) for bag, _ in training])
 train_y = np.array([np.array(output_row) for _, output_row in training])
 
-# Define the model architecture
+#model architecture
 model = Sequential()
 model.add(Dense(128, input_shape=(len(train_x[0]),), activation='relu'))
 model.add(Dropout(0.5))
@@ -60,13 +60,13 @@ model.add(Dense(64, activation='relu'))
 model.add(Dropout(0.5))
 model.add(Dense(len(train_y[0]), activation='softmax'))
 
-# Compile the model
+# Compiling the model
 
 sgd = SGD(learning_rate=0.01, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 
-# Train the model
+# Training the model
 hist = model.fit(train_x, train_y, epochs=200, batch_size=5, verbose=1)
 
 # Save the model

@@ -62,8 +62,8 @@ app = Flask(__name__, template_folder='./templates',static_folder='./static')
 def home():
     return render_template('index.html')
 
-# define a route for karubot.html
-@app.route('/karubot')
+# define a route for kyubot.html
+@app.route('/kyubot')
 def hom():
     return render_template('base.html')
 
