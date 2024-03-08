@@ -11,15 +11,15 @@
     },
 
     {"tag":"goodbye",
-     "patterns":["cya","see you later","goodbye","i am leaving"],
+     "patterns":["bye","see you later","goodbye","i am leaving"],
      "responses":["talk to you later","see you","goodbye"]
      },
 
     {"tag":"name",
      "patterns":["what is your name","what should i call you","what do they call you"],
-     "responses":["<h1>you can call me venum</h1>",
-                  "<h1>I'm venum</h1>",
-                  "<h1> I am venum the rocking programmer</h1>"]
+     "responses":["I am KyuBot, a chatbot made for the Kirinyaga university students and staff",
+                  "You can call me KyuBot",
+                  "I am KyuBot"]
      },
     {
         "tag": "weather",
@@ -39,20 +39,19 @@
                     "what's going on today?", "is there any event coming next in School?"],
         "responses": ["There are many events in the School. It all depends with the school calender. some of the events are but not limited to : \n1.Graduation in December \n2.Games and Sports during the first and second semester \n3.Club events throughout the school calender", 
                     "You can refer for your favourite event in the list below:some of the events are but not limited to : \n1.Graduation in December \n2.Games and Sports during the first and second semester \n3.Club events throughout the school calender", 
-                    "Below are some of the upcoming and past events that happen in Kirinyaga:some of the events are but not limited to : \n1.Graduation in December \n2.Games and Sports during the first and second semester \n3.Club events throughout the school calender",
-                    "Click this link to know about the upcoming events https://karu.ac.ke/student-notice-board/"]
+                    "Below are some of the upcoming and past events that happen in Kirinyaga:some of the events are but not limited to : \n1.Graduation in December \n2.Games and Sports during the first and second semester \n3.Club events throughout the school calender"]
     },
     {   "tag":"age",
-        "patterns":["how old is the school","how old are you",
-                    "what is your age","how old are you now"],
-        "responses":["i am a virtual assiatnt i dont have age",
-                   "i am old enough to know that i am a system, so i dont have an appropriate age"]
+        "patterns":["how old is the school"],
+        "responses":["The university has been around for 10 years now",
+                   "The university was established in 2012"]
      
     },
     {   "tag":"hours",
         "patterns":["what hours are you open",
                     "when are you open",
                     "what time do you operate",
+                    "are you open right now?",
                     "are you currently opened?"],
         "responses":["we are open right now",
                     "we are open from 8.00 am to 9pm",
@@ -67,9 +66,9 @@
                     "can you give me directions to the school?", 
                     "where is the school located?",
                     "where is Kirinyaga university located"],
-        "responses": ["The school is located at in around Kirinyaga some 20km from  Nyeri.",
-                     "Here are the directions directions.To get to the school, you have have to travel to Kirinyaga town. Then take a cab to main university or the town campus which is in Kirinyaga town", 
-                      "Here are the directions to Kirinyaga University: To get to the school, you have have to first travel to Kirinyaga town. If you are going to main campus you will have to take a cab, otherwise town campus is located within Kirinyaga town"]
+        "responses": ["The school is located at in Kirinyaga county, at Kutus town",
+                     "Here are the directions directions.To get to the school, you have have to travel to Kutus in Kirinyaga", 
+                      "Here are the directions to Kirinyaga University: To get to the school, you have have to first travel to Kutus town."]
     },
  
     {
@@ -98,19 +97,13 @@
                  "Can I apply as an international student?"],
     "responses": ["To be admitted as a student of Kirinyaga, you need to first fill out the application form and mail it to the school", 
                   "You can apply to the university by filling out an application form and submitting the required documents.", 
-                  "The application deadline is stated in your admission letter.", 
-                  "Yes, international students are welcome to apply. Please check Kirinyaga university website for international student application requirements."]
+                  "The application deadline is stated in your admission letter."]
     },
     {
     "tag": "courses",
     "patterns": ["What courses does the university offer?", 
-                 "Can you tell me more about the courses offered in the university",
-                  "What are the prerequisites for [specific course]?",
-                  "What is required to pursue a [specific course]",
-                   "How many credits is required for a [specific course]?"],
-    "responses": ["Kirinyaga University offers a wide range of courses.n1/follow the links under their respective schools to know more about the courses offered:\n1.School of Business https://sob.karu.ac.ke/, \n2. School of Pure and Applied Sciences https://karu.ac.ke/school-of-pure-and-applied-sciences,\n3.School of Agriculture and BIotechnology https://karu.ac.ke/school-of-agriculture-and-biotechnology/,\n4. School of Nursing https://karu.ac.ke/school-of-nursing/,\n5. School of Education and Social Sciences https://karu.ac.ke/school-of-education-and-social-sciences/, \n6. School of Natural Resources and Environment Studies https://karu.ac.ke/school-of-natural-resources-environmental-studies/", 
-                  "Sure, click the links under your school of choice to know about the courses offered in Kirinyaga University.\n1.School of Business https://sob.karu.ac.ke/, \n2. School of Pure and Applied Sciences https://karu.ac.ke/school-of-pure-and-applied-sciences,\n3.School of Agriculture and BIotechnology https://karu.ac.ke/school-of-agriculture-and-biotechnology/,\n4. School of Nursing https://karu.ac.ke/school-of-nursing/,\n5. School of Education and Social Sciences https://karu.ac.ke/school-of-education-and-social-sciences/, \n6. School of Natural Resources and Environment Studies https://karu.ac.ke/school-of-natural-resources-environmental-studies/", 
-                  "To know more about the prerequisites about your course of interest, expore the links under the different schools below: \n1.School of Business https://sob.karu.ac.ke/, \n2. School of Pure and Applied Sciences https://karu.ac.ke/school-of-pure-and-applied-sciences,\n3.School of Agriculture and BIotechnology https://karu.ac.ke/school-of-agriculture-and-biotechnology/,\n4. School of Nursing https://karu.ac.ke/school-of-nursing/,\n5. School of Education and Social Sciences https://karu.ac.ke/school-of-education-and-social-sciences/, \n6. School of Natural Resources and Environment Studies https://karu.ac.ke/school-of-natural-resources-environmental-studies/"]
+                 "Can you tell me more about the courses offered in the university"],
+    "responses": ["Kirinyaga University offers a wide range of courses.\n1.Business Course \n2.Tourism and Hospitality Course \n3.Social Sciences \n4. Pure and Applied Sciences"]
     },
     {
     "tag": "housing",
@@ -147,12 +140,12 @@
                  "How long are the long holidays?",
                   "Is the university closed on public holidays?"],
                   
-    "responses": ["The semester starts on [start date].", 
-                  "The start of the semester depends on your current year of study. you can click on this link to know about when your semester starts. https://karu.ac.ke/student-notice-board/", 
-                  "The date of the final exams depend on your current year of study. ypu can click on this link to know about the start of your final exams. https://karu.ac.ke/student-notice-board/", 
+    "responses": ["The semester starts on August.", 
+                  "The start of the semester depends on your current year of study but all students are supposed to report by september latest", 
+                  "The date of the final exams depend on your current year of study.", 
                   "Sure, the school's academic calender is subject to changes and is therefore not guranteed to ramain constant. However the current academic calender is as follows. The academic calender is divided into two semesters. The first semester starts on August and ends in December while the second semester commens on January and ends in April.",
                   "The long holidays are subject to change but usually starts on May to start August",
-                  "Yes, the university is closed on public holidays such as [list of holidays]."]
+                  "Yes, the university is closed on public holidays"]
     },   
     {
     "tag": "library",
@@ -173,15 +166,15 @@
     "responses": ["The Kirinyaga University library is opened: \n1.from 8.00 A.M to 10.00PM on weekdays. \n2. from 8.00 A.M to 12.00 noon on saturday \n3. the library is closed during public holidays", 
                  "The requirements to get into the University library are your student ID and any other necessary document required by the librarian",
                 "You will need your student ID card to access the university library",
-                "Yes, Kirinyaga University has a virtual library that can be accessed via the school portal click this link to access the online library https://library.karu.ac.ke/",
-                "Sure thing, Kirinyaga University has an online library that can be accessed via the school portal click this link to access the online library https://library.karu.ac.ke/",
+                "Yes, Kirinyaga University has a virtual library that can be accessed via the school portal click this link to access the online library https://library.kyu.ac.ke/",
+                "Sure thing, Kirinyaga University has an online library that can be accessed via the school portal click this link to access the online library https://library.kyu.ac.ke/",
                  "Yes, you can borrow books from the library. All you need to provide is your student ID card.", 
                  "The requirements for borrowing a book from the library are your student ID card and personal details",
                  "A student is allowed to stay with the book borrowed from the library as stipulated by the librarian",
                  "Incase a student looses a book from the University library, they should contact the school librarian personally",
                  "The penalty for loosing a book borrowed from the university library depends on the book lost",
                  "Yes, there are quiet study spaces available in the library.",
-                 "You can access online library resources by clickning this link https://library.karu.ac.ke/"]
+                 "You can access online library resources by clickning this link https://library.kyu.ac.ke/"]
                
     },
     {
@@ -196,20 +189,9 @@
     "responses": ["If you are having any trouble with your computer, you can mail your description to the IT_Support team via this email address:info@karu.ac.ke ", 
                  "You can connect to the university Wi-Fi by clicking on KarU WIFI under available WI-FI Networks in your smart phonei-Fi", 
                  "The required software for your course will be provided by the lecturer once your lessons begin", 
-                 "Sure, you can get online IT_Support, just mail the description of the problems you are facing to the IT_Support team via this email address:info@karu.ac.ke",
+                 "Sure, you can get online IT_Support, just mail the description of the problems you are facing to the IT_Support team via this email address:info@kyu.ac.ke",
                  "Yes, there is a help desk for IT support located at ICT department office. you can open google maps in your smartphone and the university map will guide you to the IT_Support team"]
-    },   
-    {
-    "tag": "career_services",
-    "patterns": ["How can I find attachment opportunities?",
-                  "Does the university help its students find attachment opportunities",
-                "What career fairs are available?",
-                 "What career opportunities are available after graduation?"],
-    "responses": ["You can find attachment opportunities by mailing your attachment letter provided by the school to the institution of your choice",
-                  "Yes, the university helps its student find attachmnet opportunities based on their course of study",
-                 "There are several career fairs throughout the year, click this link to know more https://karu.ac.ke/student-notice-board/",
-                "There are several career opportunities available for all graduates, visit the scholl career counsellor for more guidelines"]
-    },  
+    },    
     {
     "tag": "international_students",
     "patterns": ["What are the requirements for international students?", 
@@ -226,8 +208,8 @@
     "patterns": ["Where is the student health center located?", 
                  "What services are available at the health center?",
                   "What is the process for scheduling an appointment with the doctor at the health center?",
-                  "Does the health center treat [specific] disease?",
-                  "Can i get medication for [specific] disease?",
+                  "Does the health center treat all disease?",
+                  "Can i get medication for any disease?",
                   "Are students charged for visitng the health center?", 
                   "when is the university health centre opened?",
                   "what are the closing and opening hours for the university health center?",
@@ -257,35 +239,19 @@
                 "The mess is open between \n1.7.00AM to 3.00PM for lunch and supper \n2. 6.00PM to 8.00PM for supper", 
                 "The mess is closed between 3.00PM to 6.00PM and after 8.00PM"]
     },
-        
-    {
-        "tag": "Faculty Directory",
-        "patterns": [
-            "How can I find contact information for a faculty member?",
-            "What is the email address for my professor?",
-            "Who teaches [course name]?",
-            "What are the office hours for my professor?"
-        ],
-        "responses": [
-            "You can find contact information for a faculty member in our online directory.",
-            "The email address for your professor is [email address].",
-            "[Professor's name] teaches [course name].",
-            "The office hours for your professor are [office hours]."
-        ]
-    },
+    
     {
         "tag": "Student Clubs and Organizations",
         "patterns": [
             "What student clubs are available?",
             "How can I join a student organization?",
             "Are there any events coming up?",
-            "What is the [specific club] about?"
+            "What are the clubs about?"
         ],
         "responses": [
-            "We have a variety of student clubs and organizations available including [list of clubs].",
+            "We have a variety of student clubs and organizations available including /n1. Nature club /n2.Drama club /n3.Fashion club /n4.Karate club",
             "You can join a student organization by contacting the club's president or attending an event.",
-            "Yes, there are several events coming up. Would you like more information?",
-            "[Specific club] is a [description of the club]."
+            "Yes, there are several events coming up. Would you like more information?"
         ]
     },
     {
@@ -297,8 +263,7 @@
             "Can you help me with directions?"
         ],
         "responses": [
-            "You can get to campus by [list of transportation options].",
-            "Transportation options include [list of transportation options].",
+            "You can get to campus by PSV or motorbikes depending on your location.",
             "Yes, there is a shuttle from the airport. Would you like more information?",
             "Yes, I can help you with directions. Where are you coming from?"
         ]
@@ -317,17 +282,12 @@
     {
         "tag": "Lab Hours",
         "patterns": ["What are the lab hours?", "When is the lab open?", "Can you tell me the lab hours?"],
-        "responses": ["The lab is open from [opening time] to [closing time] on weekdays.", "The lab is open on weekdays from [opening time] to [closing time].", "The lab is open from [opening time] to [closing time] on weekdays, and from [opening time] to [closing time] on weekends."]
-    },
-    {
-        "tag": "Course Evaluations",
-        "patterns": ["How do I complete a course evaluation?", "When are course evaluations due?", "Can you explain course evaluations?"],
-        "responses": ["You can complete a course evaluation by logging into the student portal and following the instructions.", "Course evaluations are typically due at the end of the semester, but specific dates will be announced by your instructor.", "Course evaluations are a way for students to provide feedback on the course and the instructor."]
+        "responses": ["The lab is open from 9:00am to 5:00pm on weekdays.", "The lab is open on weekdays from 9:00am to 5:00pm.", "The lab is open from 9:00am to 5:00pm  on weekdays, and from 9:00am to 5:00pm  on weekends."]
     },
     {
         "tag": "Grading Policies",
         "patterns": ["How are grades calculated?", "Can you explain the grading policy?", "What is the grading scale?"],
-        "responses": ["Grades are calculated based on [grading policy].", "The grading policy is outlined in the course syllabus.", "The grading scale is as follows: A = [range], B = [range], C = [range], D = [range], F = [range]."]
+        "responses": ["Grades are calculated based on the university grading policy which changes every academic year.", "The grading policy is outlined in the course syllabus.", "The grading scale is as follows: A = [range], B = [range], C = [range], D = [range], F = [range]."]
     },
     {
         "tag": "Continuing Education",
@@ -352,47 +312,7 @@
         "There are many opportunities for students to get involved in campus life, such as clubs and organizations, student government, athletics, cultural events, and volunteer programs. Please visit our website or the student center for more information."
         ]
     },
-    {
-        "tag": "Academic Support",
-        "patterns": [
-        "How can I get academic support?",
-        "Are there tutoring services available?",
-        "I need help with my coursework, what should I do?"
-        ],
-        "responses": [
-        "The university offers a variety of academic support services, including tutoring, study groups, academic advising, and academic coaching. Please contact the academic support center or your academic advisor for more information."
-        ]
-    },
-    {
-        "tag": "Social Events",
-        "patterns": [
-        "What social events are happening on campus?",
-        "Is there anything fun happening on campus?",
-        "What are the upcoming social events?"
-        ],
-        "responses": [
-        "There are many social events happening on campus throughout the year, including concerts, festivals, movie nights, and cultural events. Please check the university calendar or the student center for more information."
-        ]
-    },
-    {
-        "tag": "Faculty Office Hours",
-        "patterns": [
-        "How can I find out my professor's office hours?",
-        "When are the faculty office hours?",
-        "What is the best way to contact my professor?"
-        ],
-        "responses": [
-        "You can find your professor's office hours on the course syllabus or on the university website. The best way to contact your professor is through email or during their office hours. If you have trouble reaching your professor, please contact the department office for assistance."
-        ]
-    },
-    {
-        "tag": "International Student Support",
-        "patterns": ["What resources are available for international students?",
-        "How can I get help as an international student?", "Are there any programs for international students?", 
-        "Can you tell me more about the international student office?"],
-        "responses": ["Our international student office provides a range of services, including help with visas and immigration, cultural adjustment, academic support, and more. Feel free to visit the office or visit our website for more information."
-    ]
-    },
+ 
     {
         "tag": "Campus Tours",
         "patterns": ["Can I schedule a campus tour?", 
@@ -446,13 +366,6 @@
     },
 
     {
-        "tag": "Study Abroad Programs",
-        "patterns": ["Do you offer study abroad programs?", "What countries can I study abroad in?", "How can I apply for a study abroad program?"],
-        "responses": ["Yes, we offer study abroad programs in [list of countries/regions].", "Our study abroad programs are designed to provide students with unique learning opportunities and cultural experiences.",
-         "To apply for a study abroad program, you will need to [application process]."
-         ]
-    },
-    {
         "tag": "graduation requirements",
         "patterns":["what credits do i need to graduate","what is the minimal requirement to graduate","how do i graduate"],
         "responses":["you can graduate once you complete your course","you need to have a passmark of fifty credits","you can graduate once you are approved"]
@@ -460,14 +373,7 @@
     }
   
    
-   
 
-
-      
-
-
-
-    
     
 ]
 }

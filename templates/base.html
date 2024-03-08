@@ -87,9 +87,6 @@
     }
 
 
-
-
-
     // Send a message to the chatbot
     function sendMessage() {
       var message = messageInput.value;
@@ -113,16 +110,16 @@
       })
         .then(response => response.text())
         .then(data => {
-          console.log("datat", data)
+          console.log("response", data)
           // Create a new message element for the chatbot's response
           var chatbotMessage = document.createElement('div');
-          chatbotMessage.classList.add('message', 'chatbot-message'); // Add the "chatbot-message" class
+          chatbotMessage.classList.add('message', 'chatbot-message'); 
           var chatbotText = document.createElement('div');
-          chatbotText.innerHTML = '<strong>KaruBot:</strong> ';
+          chatbotText.innerHTML = '<strong>KyuBot:</strong> ';
           chatbotMessage.appendChild(chatbotText);
           chatboxBody.appendChild(chatbotMessage);
 
-          // Add the bot's response letter by letter with a delay
+          // Typing simulation
           var i = 0;
           var responseInterval = setInterval(function () {
             if (i < data.length) {

@@ -60,7 +60,7 @@ def get_response(intents_list, intents_json):
             break
     return result
 
-print("*********Hello and welcome to Karatina University. You can ask me anything about the university********")
+print("*********Hello and welcome to Kirinyaga University. You can ask me anything about the university********")
 
 while True:
     message = input("user:")
